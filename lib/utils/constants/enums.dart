@@ -1,0 +1,1 @@
+enum RoundedButtonType { primary, secondary }
