@@ -5,6 +5,9 @@ class TTexts {
   static const String enterYourUserName = 'Username';
   static const String enterYourEmail = 'Email address';
   static const String enterYourPassword = 'Password';
+  static const String save = 'SAVE';
+  static const String noThanks = 'NO THANKS';
+  static const String getStarted = 'GET STARTED';
 
   // ------------------- StartUp Screen -------------------
   static const String alreadyHaveAccount = 'ALREADY HAVE AN ACCOUNT?';
@@ -31,5 +34,19 @@ class TTexts {
   static const String titleChooseTopic = 'to Silent Moon?';
   static const String subTitleChooseTopic = 'Choose a topic to focus on.';
 
+  // ------------------- Reminders Screen -------------------
+  static const String headingReminders = 'What time would you';
+  static const String titleReminders = 'like to meditate?';
+  static const String subTitleReminders =
+      'Any time you can choose but We recommend first thing in the morning.';
 
+  static const String heading2Reminders = 'Which day would you';
+  static const String title2Reminders = 'like to meditate?';
+  static const String subTitle2Reminders =
+      'Everyday is best, but We recommend picking at least five.';
+
+  // ------------------- Welcome Screen -------------------
+  static const String headingWelcome = 'Hi Behnam, Welcome';
+  static const String titleWelcome = 'to Silent Moon';
+  static const String subTitleWelcome = 'Explore the app, Find some peace of mind to prepare for meditation.';
 }

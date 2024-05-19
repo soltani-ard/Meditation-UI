@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:meditation_ui/screens/home/reminders_screen.dart';
 import 'package:meditation_ui/utils/constants/colors.dart';
 import 'package:meditation_ui/utils/constants/strings.dart';
 import 'package:meditation_ui/utils/extensions/extensions.dart';
@@ -149,53 +150,56 @@ class ChooseTopicScreen extends StatelessWidget {
                   ? context.width * 0.55
                   : context.width * 0.45;
               var cObj = dataArr[index];
-              return Container(
-                height: height,
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  color: HexColor.fromHex(cObj["color"]),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: ClipRRect(
-                  borderRadius: const BorderRadius.only(
-                      topLeft: Radius.circular(10),
-                      topRight: Radius.circular(10)),
-                  //BorderRadius.circular(10),
-                  child: Stack(
-                    alignment: Alignment.topCenter,
-                    children: [
-                      Image.asset(
-                        cObj['image'],
-                        fit: BoxFit.fitWidth,
-                        width: double.maxFinite,
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(
-                            top: 20.0, left: 15, bottom: 5),
-                        child: Row(
-                          children: [
-                            Expanded(
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                mainAxisAlignment: MainAxisAlignment.end,
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  Text(
-                                    cObj['title'],
-                                    maxLines: 2,
-                                    style: TextStyle(
-                                        color: HexColor.fromHex(
-                                            cObj['text_color']),
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w700),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
+              return InkWell(
+                onTap: (){context.push(const RemindersScreen());},
+                child: Container(
+                  height: height,
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    color: HexColor.fromHex(cObj["color"]),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: ClipRRect(
+                    borderRadius: const BorderRadius.only(
+                        topLeft: Radius.circular(10),
+                        topRight: Radius.circular(10)),
+                    //BorderRadius.circular(10),
+                    child: Stack(
+                      alignment: Alignment.topCenter,
+                      children: [
+                        Image.asset(
+                          cObj['image'],
+                          fit: BoxFit.fitWidth,
+                          width: double.maxFinite,
                         ),
-                      )
-                    ],
+                        Padding(
+                          padding: const EdgeInsets.only(
+                              top: 20.0, left: 15, bottom: 5),
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.end,
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      cObj['title'],
+                                      maxLines: 2,
+                                      style: TextStyle(
+                                          color: HexColor.fromHex(
+                                              cObj['text_color']),
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w700),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 ),
               );

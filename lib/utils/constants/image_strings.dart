@@ -1,6 +1,7 @@
 class TImages {
   // ------------------- General ----------------------
   static const String back = "assets/images/general/back.svg";
+  static const String logo = "assets/images/welcome/logo.png";
 
   // ------------------- Startup ----------------------
   static const String startupVector =
@@ -18,5 +19,8 @@ class TImages {
   static const String c4 = "assets/images/choose_topic/c4.png";
   static const String c5 = "assets/images/choose_topic/c5.png";
   static const String c6 = "assets/images/choose_topic/c6.png";
+
+  // -------------------- Welcome -------------------------
+  static const String welcomeVector = "assets/images/welcome/welcome.png";
 
 }

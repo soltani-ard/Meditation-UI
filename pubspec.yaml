@@ -68,6 +68,7 @@ flutter:
     - assets/images/social_media/
     - assets/images/startup/
     - assets/images/choose_topic/
+    - assets/images/welcome/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

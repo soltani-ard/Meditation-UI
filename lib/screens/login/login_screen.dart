@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:meditation_ui/common/widgets/rounded_button.dart';
 import 'package:meditation_ui/common/widgets/rounded_text_field.dart';
-import 'package:meditation_ui/screens/home/choose_topic_screen.dart';
+import 'package:meditation_ui/screens/home/welcome_screen.dart';
 import 'package:meditation_ui/screens/login/register_screen.dart';
 import 'package:meditation_ui/utils/constants/colors.dart';
 import 'package:meditation_ui/utils/constants/image_strings.dart';
@@ -161,7 +161,7 @@ class LoginScreen extends StatelessWidget {
               const SizedBox(height: 20,),
               const RoundedTextField(hintText: TTexts.enterYourPassword, obscureText: true),
               const SizedBox(height: 20,),
-              RoundedButton(title: TTexts.login, onPressed: () {context.push(ChooseTopicScreen());}),
+              RoundedButton(title: TTexts.login, onPressed: () {context.push(const WelcomeScreen());}),
               TextButton(onPressed: (){}, child: Text(
                 TTexts.forgotPassword,
                 textAlign: TextAlign.center,

@@ -23,7 +23,7 @@ class RoundedButton extends StatelessWidget {
         elevation: 0,
         color: roundedButtonType == RoundedButtonType.primary
             ? TColors.primary
-            : TColors.secondary,
+            : TColors.tertiary,
         height: 60,
         shape: RoundedRectangleBorder(
             side: BorderSide.none, borderRadius: BorderRadius.circular(30)),
