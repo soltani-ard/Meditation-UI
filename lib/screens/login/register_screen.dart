@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:meditation_ui/common/widgets/rounded_button.dart';
 import 'package:meditation_ui/common/widgets/rounded_text_field.dart';
+import 'package:meditation_ui/screens/home/choose_topic_screen.dart';
 import 'package:meditation_ui/utils/constants/colors.dart';
 import 'package:meditation_ui/utils/constants/image_strings.dart';
 import 'package:meditation_ui/utils/constants/strings.dart';
@@ -214,7 +215,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               const SizedBox(
                 height: 8,
               ),
-              RoundedButton(title: TTexts.registerNow, onPressed: () {}),
+              RoundedButton(title: TTexts.registerNow, onPressed: () {context.push(ChooseTopicScreen());}),
             ],
           ),
         ),

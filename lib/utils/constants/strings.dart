@@ -26,4 +26,10 @@ class TTexts {
   static const String iHaveReadAndAgree = 'I have read and agree to';
   static const String privacyAndPolicy = 'Privacy & Policy';
 
+  // ------------------- Choose Topic Screen -------------------
+  static const String headingChooseTopic = 'What Brings you';
+  static const String titleChooseTopic = 'to Silent Moon?';
+  static const String subTitleChooseTopic = 'Choose a topic to focus on.';
+
+
 }
