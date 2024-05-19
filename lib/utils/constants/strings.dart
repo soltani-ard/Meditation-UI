@@ -48,5 +48,10 @@ class TTexts {
   // ------------------- Welcome Screen -------------------
   static const String headingWelcome = 'Hi Behnam, Welcome';
   static const String titleWelcome = 'to Silent Moon';
-  static const String subTitleWelcome = 'Explore the app, Find some peace of mind to prepare for meditation.';
+  static const String subTitleWelcome =
+      'Explore the app, Find some peace of mind to prepare for meditation.';
+
+  // ------------------- Home Screen -------------------
+  static const String titleHome = 'Good Morning, Behnam';
+  static const String subTitleHome = 'We Wish you have a good day';
 }

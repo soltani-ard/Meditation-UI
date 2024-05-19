@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:meditation_ui/common/widgets/circle_button.dart';
 import 'package:meditation_ui/common/widgets/rounded_button.dart';
-import 'package:meditation_ui/screens/home/welcome_screen.dart';
+import 'package:meditation_ui/screens/home/home_screen.dart';
 import 'package:meditation_ui/utils/constants/colors.dart';
 import 'package:meditation_ui/utils/constants/strings.dart';
 import 'package:meditation_ui/utils/extensions/extensions.dart';
@@ -114,23 +114,33 @@ class _RemindersScreenState extends State<RemindersScreen> {
                       children: dayArray.map(
                         (dObj) {
                           return CircleButton(
-                              title: dObj['name'], isSelected: dObj['is_selected'], onTap: () {
+                              title: dObj['name'],
+                              isSelected: dObj['is_selected'],
+                              onTap: () {
                                 setState(() {
-                                  dayArray[dayArray.indexOf(dObj)]['is_selected'] = !dObj['is_selected'] ?? false;
+                                  dayArray[dayArray.indexOf(dObj)]
+                                          ['is_selected'] =
+                                      !dObj['is_selected'] ?? false;
                                 });
-                          });
+                              });
                         },
                       ).toList(),
                     ),
                   ],
                 ),
               ),
-              RoundedButton(title: TTexts.save, onPressed: () {context.push(const WelcomeScreen());}),
+              RoundedButton(
+                  title: TTexts.save,
+                  onPressed: () {
+                    context.push(HomeScreen());
+                  }),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        context.push(HomeScreen());
+                      },
                       child: Text(
                         TTexts.noThanks,
                         style: TextStyle(

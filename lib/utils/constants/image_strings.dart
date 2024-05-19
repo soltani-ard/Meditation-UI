@@ -2,6 +2,7 @@ class TImages {
   // ------------------- General ----------------------
   static const String back = "assets/images/general/back.svg";
   static const String logo = "assets/images/welcome/logo.png";
+  static const String logoBlack = "assets/images/home/logo_black.png";
 
   // ------------------- Startup ----------------------
   static const String startupVector =
@@ -22,5 +23,11 @@ class TImages {
 
   // -------------------- Welcome -------------------------
   static const String welcomeVector = "assets/images/welcome/welcome.png";
+
+  // -------------------- Home -------------------------
+  static const String courseH1 = "assets/images/home/h1.png";
+  static const String courseH2 = "assets/images/home/h2.png";
+  static const String courseDailyBG = "assets/images/home/d1.png";
+  static const String playIcon = "assets/images/home/play.png";
 
 }
