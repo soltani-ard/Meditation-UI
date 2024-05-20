@@ -61,4 +61,9 @@ class TTexts {
   static const String tabProfile = 'Behnam';
   static const String tabMusic = 'Music';
   static const String tabSleep = 'Sleep';
+
+  // ------------------ Course Detail Screen -------------------
+  static const String goodMorning = 'Good Morning';
+  static const String course = 'COURSE';
+  static const String courseSubTitle = 'Ease the mind into a restful night’s sleep  with these deep, ambient tones.';
 }

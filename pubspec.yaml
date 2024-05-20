@@ -71,6 +71,7 @@ flutter:
     - assets/images/welcome/
     - assets/images/home/
     - assets/images/main_tab_view/
+    - assets/images/course_detail/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
