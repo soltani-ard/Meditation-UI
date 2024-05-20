@@ -65,5 +65,11 @@ class TTexts {
   // ------------------ Course Detail Screen -------------------
   static const String goodMorning = 'Good Morning';
   static const String course = 'COURSE';
-  static const String courseSubTitle = 'Ease the mind into a restful night’s sleep  with these deep, ambient tones.';
+  static const String courseSubTitle =
+      'Ease the mind into a restful night’s sleep  with these deep, ambient tones.';
+
+  // ------------------- Meditate Screen -------------------
+  static const String meditate = 'Meditate';
+  static const String meditateSubTitle =
+      'we can learn how to recognize when our minds are doing their normal everyday acrobatics.';
 }

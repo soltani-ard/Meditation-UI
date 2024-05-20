@@ -81,7 +81,9 @@ class HomeScreen extends StatelessWidget {
                       children: [
                         Expanded(
                           child: InkWell(
-                            onTap: (){context.push(const CourseDetailScreen());},
+                            onTap: () {
+                              context.push(const CourseDetailScreen());
+                            },
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(15),
                               child: Container(
@@ -91,10 +93,12 @@ class HomeScreen extends StatelessWidget {
                                         BorderRadius.all(Radius.circular(15)),
                                   ),
                                   child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: [
                                       Row(
-                                        mainAxisAlignment: MainAxisAlignment.end,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.end,
                                         children: [
                                           Image.asset(
                                             TImages.courseH1,
@@ -130,14 +134,18 @@ class HomeScreen extends StatelessWidget {
                                             ),
                                             Row(
                                               mainAxisAlignment:
-                                                  MainAxisAlignment.spaceBetween,
+                                                  MainAxisAlignment
+                                                      .spaceBetween,
                                               children: [
                                                 Text("3-10 MIN",
                                                     style: TextStyle(
                                                         color: TColors.tertiary,
                                                         fontSize: 11)),
                                                 InkWell(
-                                                  onTap: () {context.push(const CourseDetailScreen());},
+                                                  onTap: () {
+                                                    context.push(
+                                                        const CourseDetailScreen());
+                                                  },
                                                   child: Container(
                                                     decoration: BoxDecoration(
                                                       color: TColors.tertiary,
@@ -155,7 +163,8 @@ class HomeScreen extends StatelessWidget {
                                                               color: TColors
                                                                   .primaryText,
                                                               fontWeight:
-                                                                  FontWeight.w600,
+                                                                  FontWeight
+                                                                      .w600,
                                                               fontSize: 12)),
                                                     ),
                                                   ),
@@ -178,7 +187,9 @@ class HomeScreen extends StatelessWidget {
                         ),
                         Expanded(
                           child: InkWell(
-                            onTap: (){context.push(const CourseDetailScreen());},
+                            onTap: () {
+                              context.push(const CourseDetailScreen());
+                            },
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(15),
                               child: Container(
@@ -188,10 +199,12 @@ class HomeScreen extends StatelessWidget {
                                         BorderRadius.all(Radius.circular(15)),
                                   ),
                                   child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: [
                                       Row(
-                                        mainAxisAlignment: MainAxisAlignment.end,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.end,
                                         children: [
                                           Image.asset(
                                             TImages.courseH2,
@@ -227,7 +240,8 @@ class HomeScreen extends StatelessWidget {
                                             ),
                                             Row(
                                               mainAxisAlignment:
-                                                  MainAxisAlignment.spaceBetween,
+                                                  MainAxisAlignment
+                                                      .spaceBetween,
                                               children: [
                                                 Text("3-10 MIN",
                                                     style: TextStyle(
@@ -235,7 +249,10 @@ class HomeScreen extends StatelessWidget {
                                                             TColors.primaryText,
                                                         fontSize: 11)),
                                                 InkWell(
-                                                  onTap: () {context.push(const CourseDetailScreen());},
+                                                  onTap: () {
+                                                    context.push(
+                                                        const CourseDetailScreen());
+                                                  },
                                                   child: Container(
                                                     decoration: BoxDecoration(
                                                       color: TColors.tertiary,
@@ -253,7 +270,8 @@ class HomeScreen extends StatelessWidget {
                                                               color: TColors
                                                                   .primaryText,
                                                               fontWeight:
-                                                                  FontWeight.w600,
+                                                                  FontWeight
+                                                                      .w600,
                                                               fontSize: 12)),
                                                     ),
                                                   ),
@@ -322,7 +340,9 @@ class HomeScreen extends StatelessWidget {
                                   ],
                                 )),
                                 InkWell(
-                                  onTap: () {context.push(const CourseDetailScreen());},
+                                  onTap: () {
+                                    context.push(const CourseDetailScreen());
+                                  },
                                   child: Image.asset(
                                     TImages.playIcon,
                                     width: 40,

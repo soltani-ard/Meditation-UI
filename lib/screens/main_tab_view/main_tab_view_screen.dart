@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meditation_ui/common/widgets/tab_button.dart';
 import 'package:meditation_ui/screens/home/home_screen.dart';
+import 'package:meditation_ui/screens/meditate/meditate_screen.dart';
 import 'package:meditation_ui/utils/constants/image_strings.dart';
 import 'package:meditation_ui/utils/constants/strings.dart';
 
@@ -43,9 +44,7 @@ class _MainTabViewScreenState extends State<MainTabViewScreen>
           Container(
             color: Colors.greenAccent,
           ),
-          Container(
-            color: Colors.yellow,
-          ),
+          const MeditateScreen(),
           Container(
             color: Colors.red,
           ),

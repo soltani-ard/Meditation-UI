@@ -52,4 +52,21 @@ class TImages {
   static const String courseDetailTop =
       "assets/images/course_detail/detail_top.png";
   static const String backWhite = "assets/images/course_detail/back_white.png";
+
+  // -------------------- Meditation -------------------------
+  static const String meditationAllIcon = "assets/images/meditate/all.png";
+  static const String meditationAnxiousIcon =
+      "assets/images/meditate/anxious.png";
+  static const String meditationDailyCalmIcon =
+      "assets/images/meditate/dailyCalm.png";
+  static const String meditationFavIcon = "assets/images/meditate/fav_m.png";
+  static const String meditationKidsIcon = "assets/images/meditate/kids.png";
+  static const String meditation1 = "assets/images/meditate/m1.png";
+  static const String meditation2 = "assets/images/meditate/m2.png";
+  static const String meditation3 = "assets/images/meditate/m3.png";
+  static const String meditation4 = "assets/images/meditate/m4.png";
+  static const String meditationPlayBlackIcon =
+      "assets/images/meditate/play_black.png";
+  static const String meditationSleepBtn =
+      "assets/images/meditate/sleep_btn.png";
 }
