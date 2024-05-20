@@ -54,4 +54,11 @@ class TTexts {
   // ------------------- Home Screen -------------------
   static const String titleHome = 'Good Morning, Behnam';
   static const String subTitleHome = 'We Wish you have a good day';
+
+  //----------------- TabBarVie Screen -------------------
+  static const String homeTab = 'Home';
+  static const String tabMeditate = 'Meditate';
+  static const String tabProfile = 'Behnam';
+  static const String tabMusic = 'Music';
+  static const String tabSleep = 'Sleep';
 }

@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:meditation_ui/common/widgets/circle_button.dart';
 import 'package:meditation_ui/common/widgets/rounded_button.dart';
-import 'package:meditation_ui/screens/home/home_screen.dart';
+import 'package:meditation_ui/screens/main_tab_view/main_tab_view_screen.dart';
 import 'package:meditation_ui/utils/constants/colors.dart';
 import 'package:meditation_ui/utils/constants/strings.dart';
 import 'package:meditation_ui/utils/extensions/extensions.dart';
@@ -132,14 +132,14 @@ class _RemindersScreenState extends State<RemindersScreen> {
               RoundedButton(
                   title: TTexts.save,
                   onPressed: () {
-                    context.push(HomeScreen());
+                    context.push(const MainTabViewScreen());
                   }),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   TextButton(
                       onPressed: () {
-                        context.push(HomeScreen());
+                        context.push(const MainTabViewScreen());
                       },
                       child: Text(
                         TTexts.noThanks,

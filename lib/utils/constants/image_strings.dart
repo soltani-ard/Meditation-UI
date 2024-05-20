@@ -30,4 +30,11 @@ class TImages {
   static const String courseDailyBG = "assets/images/home/d1.png";
   static const String playIcon = "assets/images/home/play.png";
 
+  // -------------------- Main Tab View -------------------------
+  static const String tabHome = "assets/images/main_tab_view/home_tab.png";
+  static const String tabMeditate = "assets/images/main_tab_view/meditate_tab.png";
+  static const String tabProfile = "assets/images/main_tab_view/profile_tab.png";
+  static const String tabMusic = "assets/images/main_tab_view/music_tab.png";
+  static const String tabSleep = "assets/images/main_tab_view/sleep_tab.png";
+
 }
