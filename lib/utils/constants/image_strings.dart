@@ -69,4 +69,10 @@ class TImages {
       "assets/images/meditate/play_black.png";
   static const String meditationSleepBtn =
       "assets/images/meditate/sleep_btn.png";
+
+  // -------------------- Music -------------------------
+  static const String musicImage1 = "assets/images/music/mu1.png";
+  static const String musicImage2 = "assets/images/music/mu2.png";
+  static const String musicImage3 = "assets/images/music/mu3.png";
+  static const String musicImage4 = "assets/images/music/mu4.png";
 }

@@ -14,4 +14,8 @@ class TColors {
   static Color get secondaryText => const Color(0xffa1a4b2);
 
   static Color get txtBG => const Color(0xfff2f3f7);
+
+  static Color get sleepColor => const Color(0xff03174c);
+
+  static Color get sleepTextColor => const Color(0xffe6e7f2);
 }

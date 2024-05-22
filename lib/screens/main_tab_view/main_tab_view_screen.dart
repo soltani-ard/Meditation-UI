@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:meditation_ui/common/widgets/tab_button.dart';
 import 'package:meditation_ui/screens/home/home_screen.dart';
 import 'package:meditation_ui/screens/meditate/meditate_screen.dart';
+import 'package:meditation_ui/screens/music/music_screen.dart';
+import 'package:meditation_ui/utils/constants/colors.dart';
 import 'package:meditation_ui/utils/constants/image_strings.dart';
 import 'package:meditation_ui/utils/constants/strings.dart';
 
@@ -42,12 +44,10 @@ class _MainTabViewScreenState extends State<MainTabViewScreen>
         children: [
           HomeScreen(),
           Container(
-            color: Colors.greenAccent,
+            color: TColors.sleepColor,
           ),
           const MeditateScreen(),
-          Container(
-            color: Colors.red,
-          ),
+          MusicScreen(),
           Container(
             color: Colors.cyan,
           ),
@@ -55,9 +55,9 @@ class _MainTabViewScreenState extends State<MainTabViewScreen>
       ),
       bottomNavigationBar: Container(
         padding: const EdgeInsets.only(top: 15, bottom: 8),
-        decoration: const BoxDecoration(
-          color: Colors.white,
-          boxShadow: [
+        decoration: BoxDecoration(
+          color: selectedTab == 1 || selectedTab == 3 ? TColors.sleepColor : Colors.white,
+          boxShadow: const [
             BoxShadow(
                 color: Colors.black12, blurRadius: 4, offset: Offset(0, -4))
           ],
