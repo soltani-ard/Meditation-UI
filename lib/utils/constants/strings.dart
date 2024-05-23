@@ -72,4 +72,9 @@ class TTexts {
   static const String meditate = 'Meditate';
   static const String meditateSubTitle =
       'we can learn how to recognize when our minds are doing their normal everyday acrobatics.';
+  // ------------------- Sleep Screen -------------------
+  static const String titleSleepWelcome = 'Welcome to Sleep';
+  static const String subTitleSleepWelcome = 'Explore the new king of sleep. It uses sound visualization to create perfect conditions for refreshing sleep.';
+  static const String sleepStories = 'Sleep Stories';
+  static const String sleepStoriesSubTitle = 'Soothing bedtime stories to help you fall\ninto a deep and natural sleep';
 }

@@ -75,4 +75,11 @@ class TImages {
   static const String musicImage2 = "assets/images/music/mu2.png";
   static const String musicImage3 = "assets/images/music/mu3.png";
   static const String musicImage4 = "assets/images/music/mu4.png";
+
+  // ---------------------- Sleep -------------------------
+  static const String sleepBox = "assets/images/sleep/sleep_box.png";
+  static const String sleepDetailTop = "assets/images/sleep/sleep_detail_top.png";
+  static const String sleepTop = "assets/images/sleep/top_sleep.png";
+  static const String sleepBirds = "assets/images/sleep/birds.png";
+  static const String sleepWelcomeBackground = "assets/images/sleep/welcome_sleep_background.png";
 }

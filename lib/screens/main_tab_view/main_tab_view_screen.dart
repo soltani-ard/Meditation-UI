@@ -3,6 +3,7 @@ import 'package:meditation_ui/common/widgets/tab_button.dart';
 import 'package:meditation_ui/screens/home/home_screen.dart';
 import 'package:meditation_ui/screens/meditate/meditate_screen.dart';
 import 'package:meditation_ui/screens/music/music_screen.dart';
+import 'package:meditation_ui/screens/sleep/sleep_screen.dart';
 import 'package:meditation_ui/utils/constants/colors.dart';
 import 'package:meditation_ui/utils/constants/image_strings.dart';
 import 'package:meditation_ui/utils/constants/strings.dart';
@@ -43,9 +44,7 @@ class _MainTabViewScreenState extends State<MainTabViewScreen>
         controller: controller,
         children: [
           HomeScreen(),
-          Container(
-            color: TColors.sleepColor,
-          ),
+          const SleepScreen(),
           const MeditateScreen(),
           MusicScreen(),
           Container(
